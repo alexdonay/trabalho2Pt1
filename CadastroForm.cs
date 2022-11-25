@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace trabalho2Pt1
 {
-    public partial class Form1 : Form
+    public partial class CadastroForm : Form
     {
-        public Form1()
+        public CadastroForm()
         {
             InitializeComponent();
         }
