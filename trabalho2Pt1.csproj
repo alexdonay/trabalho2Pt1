@@ -129,6 +129,7 @@
     <Content Include="MvcReportViewerErrorPage.html" />
     <Content Include="Scripts\MvcReportViewer.js" />
     <Content Include="Scripts\url.js" />
+    <Content Include="Readme.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
