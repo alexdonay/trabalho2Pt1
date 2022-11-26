@@ -93,5 +93,11 @@ namespace trabalho2Pt1
                 }
             }
         }
+
+        private void BtnRelatorio_Click(object sender, EventArgs e)
+        {
+            FrmRelatorioFolha relatorio = new FrmRelatorioFolha();
+            relatorio.Show();
+        }
     }
 }

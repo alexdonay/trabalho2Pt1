@@ -8,7 +8,7 @@ namespace trabalho2Pt1
 {
     internal class Analista : Funcionario
     {
-        private double extra { get; set; }
+        public double extra { get; set; }
         public Analista(string none, string matricula, double salarioBase, double extra) : base(none, matricula, salarioBase)
         {
             this.extra = extra;

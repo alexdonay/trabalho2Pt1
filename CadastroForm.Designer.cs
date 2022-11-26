@@ -174,6 +174,7 @@
             this.BtnRelatorio.TabIndex = 10;
             this.BtnRelatorio.Text = "Relatório";
             this.BtnRelatorio.UseVisualStyleBackColor = true;
+            this.BtnRelatorio.Click += new System.EventHandler(this.BtnRelatorio_Click);
             // 
             // CadastroForm
             // 
