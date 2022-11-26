@@ -136,12 +136,13 @@
             this.BtnGravar.TabIndex = 5;
             this.BtnGravar.Text = "Gravar";
             this.BtnGravar.UseVisualStyleBackColor = true;
+            this.BtnGravar.Click += new System.EventHandler(this.BtnGravar_Click);
             // 
             // txNome
             // 
             this.txNome.Location = new System.Drawing.Point(57, 81);
             this.txNome.Name = "txNome";
-            this.txNome.Size = new System.Drawing.Size(100, 20);
+            this.txNome.Size = new System.Drawing.Size(289, 20);
             this.txNome.TabIndex = 6;
             // 
             // txMatricula
