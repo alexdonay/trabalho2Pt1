@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txTotal = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.GridLeves = new System.Windows.Forms.DataGridView();
+            this.gridFolha = new System.Windows.Forms.DataGridView();
             this.Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Matricula = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SalarioBase = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Adicional = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tipoFuncionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.GridLeves)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridFolha)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txTotal
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 431);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(195, 20);
-            this.textBox1.TabIndex = 1;
+            this.txTotal.Location = new System.Drawing.Point(119, 431);
+            this.txTotal.Name = "txTotal";
+            this.txTotal.Size = new System.Drawing.Size(195, 20);
+            this.txTotal.TabIndex = 1;
             // 
             // label1
             // 
@@ -56,23 +56,23 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Total da Folha";
             // 
-            // GridLeves
+            // gridFolha
             // 
-            this.GridLeves.AllowUserToAddRows = false;
-            this.GridLeves.AllowUserToDeleteRows = false;
-            this.GridLeves.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridLeves.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gridFolha.AllowUserToAddRows = false;
+            this.gridFolha.AllowUserToDeleteRows = false;
+            this.gridFolha.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridFolha.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nome,
             this.Matricula,
             this.SalarioBase,
             this.Adicional,
             this.Total,
             this.tipoFuncionario});
-            this.GridLeves.Location = new System.Drawing.Point(12, 66);
-            this.GridLeves.Name = "GridLeves";
-            this.GridLeves.ReadOnly = true;
-            this.GridLeves.Size = new System.Drawing.Size(633, 343);
-            this.GridLeves.TabIndex = 3;
+            this.gridFolha.Location = new System.Drawing.Point(12, 66);
+            this.gridFolha.Name = "gridFolha";
+            this.gridFolha.ReadOnly = true;
+            this.gridFolha.Size = new System.Drawing.Size(633, 343);
+            this.gridFolha.TabIndex = 3;
             // 
             // Nome
             // 
@@ -115,13 +115,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(657, 474);
-            this.Controls.Add(this.GridLeves);
+            this.Controls.Add(this.gridFolha);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txTotal);
             this.Name = "FrmRelatorioFolha";
             this.Text = "Folha de Pagamento";
             this.Load += new System.EventHandler(this.FrmRelatorioFolha_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.GridLeves)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridFolha)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,9 +129,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txTotal;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridView GridLeves;
+        private System.Windows.Forms.DataGridView gridFolha;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn Matricula;
         private System.Windows.Forms.DataGridViewTextBoxColumn SalarioBase;
