@@ -37,6 +37,11 @@
             this.RdSuporte = new System.Windows.Forms.RadioButton();
             this.LblAdicional = new System.Windows.Forms.Label();
             this.BtnGravar = new System.Windows.Forms.Button();
+            this.txNome = new System.Windows.Forms.TextBox();
+            this.txMatricula = new System.Windows.Forms.TextBox();
+            this.txSalario = new System.Windows.Forms.TextBox();
+            this.txAdicional = new System.Windows.Forms.TextBox();
+            this.BtnRelatorio = new System.Windows.Forms.Button();
             this.GroupTipo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,6 +87,7 @@
             // RdAnalista
             // 
             this.RdAnalista.AutoSize = true;
+            this.RdAnalista.Checked = true;
             this.RdAnalista.Location = new System.Drawing.Point(21, 54);
             this.RdAnalista.Name = "RdAnalista";
             this.RdAnalista.Size = new System.Drawing.Size(62, 17);
@@ -89,28 +95,29 @@
             this.RdAnalista.TabStop = true;
             this.RdAnalista.Text = "Analista";
             this.RdAnalista.UseVisualStyleBackColor = true;
+            this.RdAnalista.CheckedChanged += new System.EventHandler(this.RdAnalista_CheckedChanged);
             // 
             // RdProgramador
             // 
             this.RdProgramador.AutoSize = true;
-            this.RdProgramador.Location = new System.Drawing.Point(21, 116);
+            this.RdProgramador.Location = new System.Drawing.Point(21, 114);
             this.RdProgramador.Name = "RdProgramador";
             this.RdProgramador.Size = new System.Drawing.Size(85, 17);
             this.RdProgramador.TabIndex = 8;
-            this.RdProgramador.TabStop = true;
             this.RdProgramador.Text = "Programador";
             this.RdProgramador.UseVisualStyleBackColor = true;
+            this.RdProgramador.CheckedChanged += new System.EventHandler(this.RdProgramador_CheckedChanged);
             // 
             // RdSuporte
             // 
             this.RdSuporte.AutoSize = true;
-            this.RdSuporte.Location = new System.Drawing.Point(21, 168);
+            this.RdSuporte.Location = new System.Drawing.Point(21, 172);
             this.RdSuporte.Name = "RdSuporte";
             this.RdSuporte.Size = new System.Drawing.Size(62, 17);
             this.RdSuporte.TabIndex = 9;
-            this.RdSuporte.TabStop = true;
             this.RdSuporte.Text = "Suporte";
             this.RdSuporte.UseVisualStyleBackColor = true;
+            this.RdSuporte.CheckedChanged += new System.EventHandler(this.RdSuporte_CheckedChanged);
             // 
             // LblAdicional
             // 
@@ -125,16 +132,58 @@
             // 
             this.BtnGravar.Location = new System.Drawing.Point(40, 361);
             this.BtnGravar.Name = "BtnGravar";
-            this.BtnGravar.Size = new System.Drawing.Size(496, 23);
+            this.BtnGravar.Size = new System.Drawing.Size(241, 23);
             this.BtnGravar.TabIndex = 5;
             this.BtnGravar.Text = "Gravar";
             this.BtnGravar.UseVisualStyleBackColor = true;
+            // 
+            // txNome
+            // 
+            this.txNome.Location = new System.Drawing.Point(57, 81);
+            this.txNome.Name = "txNome";
+            this.txNome.Size = new System.Drawing.Size(100, 20);
+            this.txNome.TabIndex = 6;
+            // 
+            // txMatricula
+            // 
+            this.txMatricula.Location = new System.Drawing.Point(57, 137);
+            this.txMatricula.Name = "txMatricula";
+            this.txMatricula.Size = new System.Drawing.Size(100, 20);
+            this.txMatricula.TabIndex = 7;
+            // 
+            // txSalario
+            // 
+            this.txSalario.Location = new System.Drawing.Point(57, 197);
+            this.txSalario.Name = "txSalario";
+            this.txSalario.Size = new System.Drawing.Size(100, 20);
+            this.txSalario.TabIndex = 8;
+            // 
+            // txAdicional
+            // 
+            this.txAdicional.Location = new System.Drawing.Point(57, 253);
+            this.txAdicional.Name = "txAdicional";
+            this.txAdicional.Size = new System.Drawing.Size(100, 20);
+            this.txAdicional.TabIndex = 9;
+            // 
+            // BtnRelatorio
+            // 
+            this.BtnRelatorio.Location = new System.Drawing.Point(311, 361);
+            this.BtnRelatorio.Name = "BtnRelatorio";
+            this.BtnRelatorio.Size = new System.Drawing.Size(241, 23);
+            this.BtnRelatorio.TabIndex = 10;
+            this.BtnRelatorio.Text = "Relatório";
+            this.BtnRelatorio.UseVisualStyleBackColor = true;
             // 
             // CadastroForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(602, 450);
+            this.Controls.Add(this.BtnRelatorio);
+            this.Controls.Add(this.txAdicional);
+            this.Controls.Add(this.txSalario);
+            this.Controls.Add(this.txMatricula);
+            this.Controls.Add(this.txNome);
             this.Controls.Add(this.BtnGravar);
             this.Controls.Add(this.LblAdicional);
             this.Controls.Add(this.GroupTipo);
@@ -161,6 +210,11 @@
         private System.Windows.Forms.RadioButton RdAnalista;
         private System.Windows.Forms.Label LblAdicional;
         private System.Windows.Forms.Button BtnGravar;
+        private System.Windows.Forms.TextBox txNome;
+        private System.Windows.Forms.TextBox txMatricula;
+        private System.Windows.Forms.TextBox txSalario;
+        private System.Windows.Forms.TextBox txAdicional;
+        private System.Windows.Forms.Button BtnRelatorio;
     }
 }
 

@@ -16,5 +16,23 @@ namespace trabalho2Pt1
         {
             InitializeComponent();
         }
+
+        private void RdProgramador_CheckedChanged(object sender, EventArgs e)
+        {
+            LblAdicional.Hide();
+            txAdicional.Hide();
+        }
+
+        private void RdSuporte_CheckedChanged(object sender, EventArgs e)
+        {
+            LblAdicional.Hide();
+            txAdicional.Hide();
+        }
+
+        private void RdAnalista_CheckedChanged(object sender, EventArgs e)
+        {
+            LblAdicional.Show();
+            txAdicional.Show();
+        }
     }
 }
